@@ -1,0 +1,27 @@
+<div class="main-container">
+  <div class="nav-container">
+      <ul>
+          <!-- <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="" fragment="home">Home</a></li>
+          <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink=""  fragment="about">About</a></li>
+          <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink=""  fragment="contact">Contact</a></li>
+          <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="" fragment="courses">Courses</a></li>l -->
+
+          <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="Home" >Home</a></li>
+          <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="About" >About</a></li>
+          <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="Contact" >Contact</a></li>
+          <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a routerLink="Courses" >Courses</a></li>
+          <span style="float: right;">
+            <li (click)="login()"><a >login</a></li>
+            <li (click)="logout()"><a >logout</a></li>
+          </span>
+      </ul>
+  </div>
+  <div class="component-container">
+            <router-outlet></router-outlet>      
+            <!-- <div *ngIf="displayLoadingIndicator" class="spinner"></div> -->
+             <!-- <app-home id="home"></app-home>
+             <app-about id="about"></app-about>
+             <app-contact id="contact"></app-contact>
+             <app-courses id="courses"></app-courses> -->
+  </div> 
+</div>

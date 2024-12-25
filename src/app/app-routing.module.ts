@@ -17,11 +17,11 @@ const appRoute: Routes = [
   {path:'Contact', component:ContactComponent,canDeactivate:[CanDeactivateGuardService]},
   {path:'Courses', component:CoursesComponent,resolve:{courses:CourseResolveService}},
  // {path:'Courses/Course/:id', component:CourseComponent},
-  // {path:'Courses',canActivateChild:[CourseGuardService],children:[
-  //   { path:'Course/:id',component:CourseComponent }]},
-  {path:'Courses',children:[
-    {path:'Course/:id',component:CourseComponent}
-  ]},
+   {path:'Courses',canActivateChild:[CourseGuardService],children:[
+     { path:'Course/:id',component:CourseComponent }]},
+  // {path:'Courses',children:[
+  //   {path:'Course/:id',component:CourseComponent}
+  // ]},
   {path:'About', component:AboutComponent},
   {path:'**',component:ErrorComponent}
   
